@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link href="/style-sheets/res-styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="navbar">
+            <div class="navbar-button-wrapper">
+            <a href="/index.html"><button>Home</button></a>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="background-image">
+        </div>
+        <div class="main-header">
+            <h1>Your dream vacation is 1 step away</h1>
+        </div>
+        <div class="page-content">
+            <div class="text-wrapper">
+                <p>You are here for a reason. No matter what stage of your vacation planning you are in.<br> We are here to help make your next vacation your best vacation.<br>
+                Provide your contact information and we will contact you with no strings attached. <br>Our expert consultants provide exceptional service whether you are just preminising or are ready to take off tomorrow. <br>Let us make your travel what you have
+                always dreamed of!</p>
+            </div>
+        </div>
+        <div class="reservations-frame">
+            <h1>Lets GO!!!</h1>
+            
+            <form
+            class="form-elements-wrapper"
+            action="https://httpbin.org/post"
+            method="post"
+            target="_blank"
+            >
+                <label for="mail">Email:</label><br>
+                <input type="email" id="email" required="required" placeholder="email"><br>
+                
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" required="required" placeholder="first name"><br>
+                
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" required="required" placeholder="last name"><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" placeholder="phone"><br>
+
+                <h2>How many will be traveling?</h2>
+
+                <input type="radio" id="alone" name="group-type" value="alone">
+                <label for="alone">Alone</label><br>
+
+                <input type="radio" id="couple" name="group-type" value="couple">
+                <label for="couple">Couple's Trip</label><br>
+
+                <input type="radio" id="group" name="group-type" value="group">
+                <label for="group">Group</label><br>
+
+                <h2>What accomodations would you like to include?</h2>
+
+                <input type="checkbox" id="meals" name="meals" value="meals">
+                <label for="meals">Provided Meals</label><br>
+
+                <input type="checkbox" id="transportation" name="transportation" value="transportation">
+                <label for="transportation">Transportation</label><br>
+
+                <input type="checkbox" id="activities" name="activities" value="activities">
+                <label for="activities">Guided Excursions</label><br>
+                
+                <h2>Got a place in mind?</h2>
+
+                <label for="destinations">Select preferred region</label>
+                <select id="destinations">
+                    <option value="None">None</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="North-Pacific">North Pacific</option>
+                    <option value= American-Coast>American Coast</option>
+                    <option value="South-Pacific">South Pacific</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Mexican-Coast">Mexican Coast</option>
+                </select><br>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/assets/pages/reservations.html">Reservations</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
